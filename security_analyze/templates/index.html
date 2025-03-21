@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Security Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+</head>
+<body>
+    <h1>Code Security Analyzer</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload a file to analyze:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Analyze</button>
+    </form>
+    {% if result is not none %}
+        <h2>Analysis Result</h2>
+        {% if result == 1 %}
+            <p>⚠️ Vulnerabilities detected!</p>
+            <h3>Recommended Fix:</h3>
+            <pre>{{ fixed_code }}</pre>
+        {% else %}
+            <p>✅ Code is secure!</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>

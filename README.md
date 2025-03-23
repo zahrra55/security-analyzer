@@ -1,6 +1,6 @@
 # Code Security Analyzer
 
-Code Security Analyzer is a comprehensive tool designed to analyze code files for potential vulnerabilities. It offers both a **web-based interface** and a **command-line interface (CLI)**, making it accessible for developers with different workflows. The project leverages a **pre-trained machine learning model** to detect vulnerabilities and provide actionable recommendations for fixing them. Additionally, it generates detailed security reports in PDF format.
+Code Security Analyzer is a tool designed to analyze code files for potential vulnerabilities. It offers both a **web-based interface** and a **command-line interface (CLI)**, making it accessible for developers with different workflows. The project leverages a **pre-trained machine learning model** to detect vulnerabilities and provide actionable recommendations for fixing them. Additionally, it generates detailed security reports in PDF format.
 
 [![Demo Video](https://img.shields.io/badge/Demo-Video-blue)](https://your-demo-video-url.com)
 

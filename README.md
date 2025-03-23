@@ -141,7 +141,7 @@ Follow these steps to set up the project locally:
    ```
 
 4. **Download the Pre-trained Model**:
-   - Download the model file from [this link](https://your-model-download-link.com).
+   - Download the model from [this link](https://huggingface.co/huggingface/CodeBERTa-small-v1).
    - Place the model file in the `models/` directory.
 
 5. **Run the Application**:
@@ -169,7 +169,6 @@ security_analyze/
 ├── uploads/
 │   ├── example.c
 │   ├── example.py
-├── app.py
 ├── analyze.py
 ├── test_analyze.py
 ├── analysis_results.db
@@ -183,10 +182,14 @@ security_analyze/
 
 ### Web Mode
 
-1. Open the application in your browser.
-2. Upload a code file using the provided form.
-3. Click the "Analyze" button to start the security analysis.
-4. View the results, including any detected vulnerabilities and recommended fixes.
+1.Run the web app with the following command:
+   ```bash
+   python analyze.py --web
+   ```
+2. Open the application in your browser.
+3. Upload a code file using the provided form.
+4. Click the "Analyze" button to start the security analysis.
+5. View the results, including any detected vulnerabilities and recommended fixes.
 
 ### CLI Mode
 
